@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import NavBar from './navbar';
 
-
 class App extends Component {
   render(){
     return(
