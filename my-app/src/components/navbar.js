@@ -1,13 +1,7 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-
 import { Navbar, Nav, Button } from 'react-bootstrap';
 
 class NavBar extends Component {
-
-  state = {
-    catogries : [ 'Bedframe', 'Mattress', 'Desk', 'ArmChair', 'Sofa' ]
-  }
 
   render(){
 
@@ -21,17 +15,6 @@ class NavBar extends Component {
           </Nav>
           <Button variant="outline-info">Log in</Button>
         </Navbar>
-
-        <Nav className="justify-content-center" variant="tabs">
-          {
-            this.state.catogries.map((catogry,index) =>
-            <Nav.Item>
-              <Nav.Link eventKey={`link-${index}`}>
-                {catogry}
-              </Nav.Link>
-            </Nav.Item>)
-          }
-        </Nav>
 
       </React.Fragment>
     )

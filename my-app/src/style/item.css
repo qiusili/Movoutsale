@@ -1,0 +1,14 @@
+.item:hover{
+    border: 1px solid #eee;
+}
+
+.item{
+    border: 1px solid transparent;
+}
+
+.item{
+    position: relative;
+    cursor : pointer;
+    margin: 20px;
+    padding: 5px;
+}
