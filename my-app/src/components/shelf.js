@@ -6,6 +6,15 @@ import queenbed from '../img/queenbed.jpg';
 import ikeadesk from '../img/ikeadesk.jpg';
 import lshapeddesk from '../img/lshapeddesk.jpg';
 
+let items = [
+  { url:queenbed,
+      name:"Queen Bed", price: 130, category: "BedFrame" },
+  { url:ikeadesk,
+      name:"Ikea Desk", price: 49, category: "Desk"},
+  { url:lshapeddesk,
+      name:"L-Shaped Desk", price: 93, category: "Desk"}
+];
+
 class Shelf extends Component {
 
   constructor(props){
@@ -23,14 +32,7 @@ class Shelf extends Component {
   }
 
   render() {
-    let items = [
-        { url:queenbed,
-            name:"Queen Bed", price: 10, category: "BedFrame" },
-        { url:ikeadesk,
-            name:"Ikea Desk", price: 3, category: "Desk"},
-        { url:lshapeddesk,
-            name:"L-Shaped Desk", price: 98, category: "Desk"}
-      ];
+    
 
     const filteredItems = items.filter(item=>this.state.activeKey==="All"||item.category==this.state.activeKey)
     .map(item => {
