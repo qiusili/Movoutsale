@@ -1,20 +1,18 @@
-import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-import NavBar from './components/navbar';
-import Shelf from './components/shelf';
+import React, { Component } from "react";
+import ReactDOM from "react-dom";
+import NavBar from "./components/navbar";
+import Shelf from "./components/shelf";
 
 class App extends Component {
-  render(){
-    return(
+  render() {
+    return (
       <div>
-        <NavBar></NavBar>
-        <Shelf></Shelf>
+        <NavBar />
+        <Shelf />
+        <Footer />
       </div>
     );
   }
 }
 
-ReactDOM.render(
-  <App />,
-  document.getElementById('root')
-);
+ReactDOM.render(<App />, document.getElementById("root"));
