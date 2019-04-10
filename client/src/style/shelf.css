@@ -1,0 +1,16 @@
+.nav-link {
+  color: grey;
+}
+
+.nav-link:hover {
+  color: grey;
+}
+
+.shelf-container {
+  width: 80%;
+}
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+}
