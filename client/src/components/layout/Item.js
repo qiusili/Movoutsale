@@ -1,16 +1,15 @@
-import React, { PureComponent } from 'react'
-import '../style/item.css'
+import React, { PureComponent } from "react";
+import "../../style/item.css";
 
 class Item extends PureComponent {
-
   render() {
-    const { url, name, price } = this.props
+    const { url, name, price } = this.props;
 
     return (
       <React.Fragment class="item">
         <img
           className="item_image"
-          style = {{width:200+"px",height:200+"px"}}
+          style={{ width: 200 + "px", height: 200 + "px" }}
           src={url}
           alt="image loading failed"
         />
@@ -19,10 +18,10 @@ class Item extends PureComponent {
           <small>$</small>
           <b>{price}</b>
         </div>
-        <br></br>
+        <br />
       </React.Fragment>
-    )
+    );
   }
 }
 
-export default Item
+export default Item;
