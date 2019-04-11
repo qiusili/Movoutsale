@@ -24,9 +24,9 @@ class Login extends Component {
       name: this.state.name,
       email: this.state.email
     };
-    console.log(user);
   }
   render() {
+    const errors = this.state.errors;
     return (
       <div className="login">
         <div className="container">
@@ -46,6 +46,9 @@ class Login extends Component {
                     value={this.state.email}
                     onChange={this.onChange}
                   />
+                  {errors.name && (
+                    <div className="invalid-feedback">{errors.email}</div>
+                  )}
                 </div>
                 <div className="form-group">
                   <input
@@ -56,6 +59,9 @@ class Login extends Component {
                     value={this.state.password}
                     onChange={this.onChange}
                   />
+                  {errors.name && (
+                    <div className="invalid-feedback">{errors.password}</div>
+                  )}
                 </div>
                 <input type="submit" className="btn btn-info btn-block mt-4" />
               </form>
