@@ -5,7 +5,7 @@ import Footer from "./components/layout/Footer";
 import Landing from "./components/layout/Landing";
 import Login from "./components/auth/Login";
 import Register from "./components/auth/Register";
-import Shelf from "./components/layout/shelf";
+import Shelf from "../../../../../Downloads/devconnector-master/client/src/components/layout/shelf";
 import "./App.css";
 
 class App extends Component {

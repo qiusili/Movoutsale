@@ -22,9 +22,9 @@ module.exports = function validateLoginInput(data) {
   } else if (!Validator.isLength(data.password, { min: 6, max: 30 })) {
     errors.password = "Password must be at least 6 characters";
   }
-
+  console.log('valid')
   return {
     errors,
-    isValid: isEmpty(errors) //return if it is valid or not
+    isValid: isEmpty(errors), //return if it is valid or not
   };
 };
